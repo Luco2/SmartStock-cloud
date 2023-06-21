@@ -10,7 +10,7 @@
 
 export PGPASSWORD='AwfgJokCvGezxSRm1Aq6'
 BASEDIR=$(dirname $0)
-DATABASE=railway
+
 
 psql -h containers-us-west-146.railway.app -U postgres -p 6875 -d railway -f "$BASEDIR/dropdb.sql" &&
 psql -h containers-us-west-146.railway.app -U postgres -p 6875 -d railway -f "$BASEDIR/schema.sql" &&
